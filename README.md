@@ -55,7 +55,6 @@ nailed-by-nkhosenothando/
 
 Examples of services offered:
 
-- Acrylic Nail Sets
 - Gel Polish
 - Nail Art
 - Refills
