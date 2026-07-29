@@ -1,158 +1,410 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ===========================
+   NAILS BY NOTTY
+   Luxury Mobile Nail Website
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #fffafc;
+html{
+    scroll-behavior:smooth;
 }
 
-header {
-    background: #d63384;
-    padding: 15px 40px;
+body{
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-family:'Poppins', sans-serif;
+
+    background:#ffffff;
+
+    color:#333;
+
+    line-height:1.7;
+
 }
 
-.logo {
-    width: 80px;
+/* ===========================
+Typography
+=========================== */
+
+h1,h2,h3,h4{
+
+    font-family:'Cormorant Garamond', serif;
+
+    color:#111;
+
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 25px;
-    font-weight: bold;
+h1{
+
+    font-size:3.5rem;
+
+    margin-bottom:20px;
+
 }
 
-.hero {
-    position: relative;
+h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
 }
 
-.hero img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+p{
+
+    margin-bottom:15px;
+
 }
 
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
+/* ===========================
+Header
+=========================== */
 
-    background: rgba(0,0,0,.5);
-    color: white;
-    padding: 30px;
-    border-radius: 10px;
+header{
+
+    position:sticky;
+
+    top:0;
+
+    background:white;
+
+    z-index:999;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 20px;
-    background: #d63384;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+.logo-container{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
 }
 
-.services,
-.gallery-preview,
-.about-content,
-.contact-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 50px 20px;
+.logo{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
 }
 
-.services h2,
-.gallery-preview h2 {
-    text-align: center;
-    margin-bottom: 30px;
+.logo-container h2{
+
+    text-align:left;
+
+    margin:0;
+
+    font-size:2rem;
+
 }
+
+.logo-container p{
+
+    color:#a67c52;
+
+    font-size:.9rem;
+
+}
+
+/* ===========================
+Navigation
+=========================== */
+
+nav{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#c8a96a;
+
+}
+
+nav a.active{
+
+    color:#c8a96a;
+
+}
+
+/* ===========================
+Sticky WhatsApp Button
+=========================== */
+
+.sticky-book{
+
+    position:fixed;
+
+    top:100px;
+
+    right:25px;
+
+    z-index:999;
+
+}
+
+.sticky-book a{
+
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 24px;
+
+    border-radius:50px;
+
+    font-weight:bold;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+    transition:.3s;
+
+}
+
+.sticky-book a:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+Hero
+=========================== */
+
+.hero{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:60px;
+
+    padding:80px 8%;
+
+}
+
+.hero-content h1{
+
+    color:#111;
+
+}
+
+.hero-highlight{
+
+    color:#b58b4a;
+
+    font-weight:bold;
+
+    font-size:1.2rem;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+Buttons
+=========================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-top:30px;
+
+}
+
+.primary-btn{
+
+    background:#111;
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    background:#c8a96a;
+
+}
+
+.secondary-btn{
+
+    background:white;
+
+    color:#111;
+
+    border:2px solid #111;
+
+    padding:15px 30px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+}
+
+.secondary-btn:hover{
+
+    background:#111;
+
+    color:white;
+
+}
+
+.call-btn{
+
+    background:#c8a96a;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 30px;
+
+    border-radius:50px;
+
+}
+
+/* ===========================
+Sections
+=========================== */
+
+section{
+
+    padding:80px 8%;
+
+}
+
+.page-banner{
+
+    background:#f8f5ef;
+
+    text-align:center;
+
+}
+
+/* ===========================
+Cards
+=========================== */
 
 .service-grid,
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 20px;
+.price-grid,
+.benefits-grid,
+.testimonial-grid,
+.area-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
 }
 
-.service-grid img,
-.gallery-grid img {
-    width: 100%;
-    border-radius: 10px;
+article,
+.price-card,
+.benefit-card,
+.testimonial{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
 }
 
-.page-banner {
-    background: #f8d7e7;
-    padding: 60px;
-    text-align: center;
+article:hover,
+.price-card:hover,
+.benefit-card:hover,
+.testimonial:hover{
+
+    transform:translateY(-8px);
+
 }
 
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+article img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+
 }
 
-.about-content img {
-    width: 100%;
-    border-radius: 10px;
-}
+.price{
 
-.contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-}
+    color:#c8a96a;
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+    font-size:2rem;
 
-input,
-textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-}
+    font-weight:bold;
 
-button {
-    background: #d63384;
-    color: white;
-    border: none;
-    padding: 12px;
-    cursor: pointer;
-}
-
-footer {
-    background: #d63384;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-@media (max-width: 768px) {
-
-    header {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .about-content,
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-text {
-        left: 5%;
-        right: 5%;
-    }
 }
